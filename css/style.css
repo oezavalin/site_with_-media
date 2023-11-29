@@ -1,0 +1,247 @@
+body {
+    font: 15px/1.5 Arial,sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.dark {
+    padding: 15px;
+    background: #ca7a10;
+    color: #000000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: #000000 solid 1px;
+    border-radius: 25px;
+}
+
+.dark li {
+    list-style-type: none;
+}
+
+.light {
+    padding: 15px;
+    background: #e2ebaf;
+    color: #000000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: #000000 solid 1px;
+    border-radius: 25px;
+}
+
+.light li {
+    list-style-type: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+/* шапка сайта */
+
+header {
+    background: #60e2c2;
+    color: #000000;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #000000 3px solid;
+}
+
+header a {
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+.container > div {
+    float: left;
+}
+
+.container > div > h1 {
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header .current a,
+.container > div > h1 > span:nth-child(2) {
+    color: #f10d0d;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #000000;
+    font-weight: bold;
+}
+
+/* секция showcase */
+
+#showcase {
+    min-height: 400px;
+    background: url("../img/headerbg.jpg") no-repeat center;
+    background-size: cover;
+    text-align: center;
+    color: #000000;
+}
+
+#showcase h1 {
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#showcase p {
+    font-size: 20px;
+}
+
+/* секция подписки */
+
+#newsletter {
+    padding: 15px;
+    color: #000000;
+    background: #60e2c2;
+}
+
+#newsletter form {
+    float: right;
+    margin-top: 15px;
+}
+
+#newsletter input[type="email"] {
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+
+.button_1 {
+    height: 38px;
+    background: #071eee;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+#boxes {
+    margin-top: 20px;
+}
+
+#boxes .box {
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+}
+
+#boxes .box ol {
+    list-style-type: none;
+}
+
+/*footer*/
+
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    color: #000000;
+    background-color: #60e2c2;
+    text-align: center;
+}
+
+/* sidebar */
+
+aside#sidebar {
+    float: right;
+    width: 30%;
+    padding: 5px;
+}
+
+article#main-col {
+    float: left;
+    width: 65%;
+}
+
+aside#sidebar input,
+aside#sidebar textarea {
+    width: 90%;
+    padding: 5px;
+}
+
+/* servises */
+
+ul#servises li {
+    list-style: none;
+    padding: 20px;
+    border: #000000 solid 1px;
+    margin-bottom: 5px;
+    background: #e2ebaf;
+    border-radius: 25px;
+}
+
+ul#servises h3 {
+    border-bottom: #353637 solid 1px;
+}
+
+@media(max-width: 768px) {
+    .container > div,
+    #newsletter form,
+    #newsletter h1,
+    #newsletter h2,
+    #boxes .box,
+    article#main-col,
+    aside#sidebar {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    header {
+        font-size: 12px;
+        padding-bottom: 20px;
+    }
+
+    .container > div > h1 > span {
+        font-size: 100px;
+    }
+
+    header nav li {
+        float: none;
+        text-align: center;
+        width: 100%;
+        display: inline-block;
+    }
+
+    #showcase h1 {
+        margin-top: 40px;
+    }
+
+    #newletter button {
+        display: block;
+        width: 100%;
+    }
+
+    #newsletter form input[type="email"],
+    .contact input,
+    .contact textarea,
+    .contact label {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
